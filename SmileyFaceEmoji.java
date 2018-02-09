@@ -6,15 +6,19 @@ import edu.princeton.cs.introcs.StdDraw;
  * 07 February 2018
  * 
  * SmileyFaceEmoji.java
+ * 
+ * This class draws faceemojis that are smiling.
  */
 
 public class SmileyFaceEmoji extends FaceEmoji {
 
+	// Constructor
 	public SmileyFaceEmoji(double x, double y, double size)
 	{
 		super(x, y, size);
 	}
 	
+	// Draws the mouth on the face to be smiling.
 	@Override
 	public void draw()
 	{

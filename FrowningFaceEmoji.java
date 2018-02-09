@@ -6,15 +6,19 @@ import edu.princeton.cs.introcs.StdDraw;
  * 07 February 2018
  * 
  * FrowningFaceEmoji.java
+ * 
+ * This class makes faceemojis that are frowning.
  */
 
 public class FrowningFaceEmoji extends FaceEmoji{
 	
+	// Constructor
 	public FrowningFaceEmoji(double x, double y, double size)
 	{
 		super(x, y, size);
 	}
 	
+	// Draws the mouth on the face to be frowning.
 	@Override
 	public void draw()
 	{
