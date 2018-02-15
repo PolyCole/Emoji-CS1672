@@ -7,20 +7,16 @@ import java.util.Scanner;
 /*
  * Author: Cole Polyak
  * Assignment 3
- * 07 February 2018
+ * 14 February 2018
  * 
  * EmojiDriver.java
+ * 
+ * This class exercises the Emoji classes and their subclasses.
  */
 
 public class EmojiDriver {
 
 	public static void main(String[] args) {
-		
-		// Canvas initialization.
-		StdDraw.setCanvasSize(1500, 1500);
-		StdDraw.setXscale(0, 100);
-		StdDraw.setYscale(0,100);
-		StdDraw.enableDoubleBuffering();
 		
 		// Scanner initialization and try/catch block.
 		Scanner file = null;
@@ -41,10 +37,16 @@ public class EmojiDriver {
 		
 		Emoji[][] arr = new Emoji[rows][columns];
 		
+		// Canvas initialization.
+				StdDraw.setCanvasSize(1500, 1500);
+				StdDraw.setXscale(0, rows*100);
+				StdDraw.setYscale(0, columns*100);
+				StdDraw.enableDoubleBuffering();
+		
 		// Lays out variables needed for emoji display.
-		double emojiSize = 100.0 / 8.0;
+		double emojiSize = rows*100 / 8.0;
 		double xPos = 0;
-		double yPos = 100;
+		double yPos = rows*100;
 		
 		
 		// Initializes array.
@@ -89,10 +91,9 @@ public class EmojiDriver {
 					arr[i][j].draw();
 					arr[i][j].animate(); // Much simpler with abstract methods.
 					
-					// Uncomment lines 94-104 for old method of animation.
+					// Uncomment lines 94-103 for old method of animation.
 					
-//					if(arr[i][j] instanceof SmileyFaceEmoji ||
-//					   arr[i][j] instanceof FrowningFaceEmoji)
+//					if(arr[i][j] instanceof FaceEmoji)
 //					{
 //						FaceEmoji a = (FaceEmoji)arr[i][j];
 //						a.wink();

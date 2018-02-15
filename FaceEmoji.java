@@ -3,7 +3,7 @@ import edu.princeton.cs.introcs.StdDraw;
 /*
  * Author: Cole Polyak
  * Assignment 3
- * 07 February 2018
+ * 14 February 2018
  * 
  * FaceEmoji.java
  * 
@@ -32,6 +32,7 @@ public class FaceEmoji extends Emoji {
 	// Draws basic face.
 	@Override
 	public void draw() {
+			
 			// Head
 			StdDraw.setPenColor(StdDraw.YELLOW);
 			StdDraw.filledCircle(super.getX(), super.getY(), super.getSize());

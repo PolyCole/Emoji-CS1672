@@ -2,7 +2,7 @@
 /*
  * Author: Cole Polyak
  * Assignment 3
- * 07 February 2018
+ * 14 February 2018
  * 
  * Emoji.java
  * 
