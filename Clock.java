@@ -3,7 +3,7 @@ import edu.princeton.cs.introcs.StdDraw;
 /*
  * Author: Cole Polyak
  * Assignment 3
- * 07 February 2018
+ * 14 February 2018
  * 
  * Clock.java
  * 
@@ -45,18 +45,11 @@ public class Clock extends Emoji {
 					 super.getY() + Math.sin(cur * (hour+3)) * super.getSize());
 	}
 	
+	
 	// Makes the clock advance by one hour.
 	public void tick()
 	{
-		// Helps the clock reset after 12.
-		if(hour + 1 == 12)
-		{
-			hour = 0;
-		}
-		else
-		{
-			++hour;
-		}
+		++hour; // sine and cosine loop so we don't need to adjust clock at 12. 
 	}
 
 }
