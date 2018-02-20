@@ -1,3 +1,4 @@
+package emoji;
 
 /*
  * Author: Cole Polyak

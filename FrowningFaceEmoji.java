@@ -1,3 +1,5 @@
+package emoji; 
+
 import edu.princeton.cs.introcs.StdDraw;
 
 /*
